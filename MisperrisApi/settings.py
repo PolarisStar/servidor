@@ -25,7 +25,7 @@ SECRET_KEY = 'ee*0^lcaug$^y+#(3t5o@gy)q(kx!s2r+tu!ets!5blyf3k@k0'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['misperrisapi.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1','apiesta.pythonanywhere.com']
 
 
 # Application definition

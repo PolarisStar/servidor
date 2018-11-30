@@ -1,10 +1,10 @@
-from rest_framework import generics
+from rest_framework import viewsets
 from .models import Dog, User
 from .serializers import DogSerializer, UserSerializer
 from django.shortcuts import render, get_object_or_404
 
 
-class DogList(generics.ListCreateAPIView):
+class DogList(viewsets.ModelViewSet):
     queryset = Dog.objects.all()
     serializer_class = DogSerializer
 
@@ -16,7 +16,7 @@ class DogList(generics.ListCreateAPIView):
         )
         return obj
 
-class UserRegister(generics.ListCreateAPIView):
+class UserRegister(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
